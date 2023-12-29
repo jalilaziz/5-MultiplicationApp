@@ -1,16 +1,3 @@
-// function result() {
-//     let inpuNummber = document.getElementById('inputNumber'); 
-//     let numSelect = document.getElementById('select'); 
-//     let result = document.getElementById('result'); 
-//     let calculationResult = parseInt(inpuNummber.value) * parseInt(numSelect.value);
-     
-// result.innerHTML = "RESULT: " + calculationResult;
-// document.getElementById('result').innerHTML = "Result: " + inpuNummber.value + " * " + numSelect.value + " = " + calculationResult;
-// document.getElementById("history").innerHTML += "<br>" + document.getElementById('result').innerHTML;
-// }
-
-//************************************ 
-
 function result() {
     let inputNumber = document.getElementById('inputNumber'); 
     let numSelect = document.getElementById('select'); 
@@ -38,6 +25,19 @@ function clearHistory() {
 }
 
 // **************************************
+
+// function result() {
+//     let inpuNummber = document.getElementById('inputNumber'); 
+//     let numSelect = document.getElementById('select'); 
+//     let result = document.getElementById('result'); 
+//     let calculationResult = parseInt(inpuNummber.value) * parseInt(numSelect.value);
+     
+// result.innerHTML = "RESULT: " + calculationResult;
+// document.getElementById('result').innerHTML = "Result: " + inpuNummber.value + " * " + numSelect.value + " = " + calculationResult;
+// document.getElementById("history").innerHTML += "<br>" + document.getElementById('result').innerHTML;
+// }
+
+// ***************************************
 
 // let input = document.getElementById("inputNumber"); 
 // let numSelect = document.getElementById("select");
