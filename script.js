@@ -30,7 +30,7 @@ let input = document.getElementById("inputNumber");
 let numSelect = document.getElementById("select");
 let result = document.getElementById("result");
 let history = document.getElementById("history"); 
-let showBtn = document.getElementById("btn"); 
+let btnResult = document.getElementById("btnresult"); 
 
 let obj={}
 
@@ -43,7 +43,7 @@ if (localStorage.length>0) {
     }
 }
 
-showBtn.addEventListener("click", () => {
+btnResult.addEventListener("click", () => {
     if (input.value !== "" && numSelect.value !== "") {
         let r =  +input.value * +numSelect.value
         result.innerHTML = "Result: " + r
