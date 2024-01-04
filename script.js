@@ -43,7 +43,7 @@ if (localStorage.length>0) {
     obj={...localStorageData}
 
     for (let n in obj) {
-        history.innerHTML += `${n} = ${obj[n] } <button style="box-shadow: 1px 1px 2px black;" id="deleteline" onclick="deleteLine()">Delete</button><br>` 
+        history.innerHTML += `${n} = ${obj[n] } <button style="box-shadow: 1px 1px 0px black;border-radius:7px;border:1px solid black;margin-left:20px;" id="deleteline" onclick="deleteLine()">Delete</button><br>` 
     }
 }
 
@@ -53,7 +53,7 @@ btnResult.addEventListener("click", () => {
         result.innerHTML = "Result: " + r
         obj[`${input.value} * ${numSelect.value}`]=r
         localStorage.setItem("data", JSON.stringify(obj))
-        history.innerHTML += `${input.value} * ${numSelect.value} = ${r} <button style="box-shadow: 1px 1px 2px black;" id="deleteline" onclick="deleteLine()">Delete</button><br>`
+        history.innerHTML += `${input.value} * ${numSelect.value} = ${r} <button style="box-shadow: 1px 1px 0px black;border-radius:7px;border:1px solid black;margin-left:20px;" id="deleteline" onclick="deleteLine()">Delete</button><br>`
         
     } else {
         alert("please enter a number")
@@ -69,7 +69,7 @@ function deleteLine(key) {
 function refreshHistory() {
     history.innerHTML = "";
     for (let n in obj) {
-        history.innerHTML += `<div>${n} = ${obj[n]} <button style="box-shadow: 1px 1px 2px black;" onclick="deleteLine('${n}')">Delete</button></div>`;
+        history.innerHTML += `<div>${n} = ${obj[n]} <button style="box-shadow: 1px 1px 0px black;border-radius:7px;border:1px solid black;margin-left:20px;" onclick="deleteLine('${n}')">Delete</button></div>`;
     }
 }
 
@@ -98,7 +98,7 @@ function clearData() {
 //     obj = { ...localStorageData };
 
 //     for (let n in obj) {
-//         history.innerHTML += `<div>${n} = ${obj[n]} <button style="box-shadow: 1px 1px 2px black;" onclick="deleteLine('${n}')">Delete</button></div>`;
+//         history.innerHTML += `<div>${n} = ${obj[n]} <button style="box-shadow: 1px 1px 0px black;border-radius:7px;border:1px solid black;margin-left:20px;" onclick="deleteLine('${n}')">Delete</button></div>`;
 //     }
 // }
 
@@ -108,7 +108,7 @@ function clearData() {
 //         result.innerHTML = "Result: " + r;
 //         obj[`${input.value} * ${numSelect.value}`] = r;
 //         localStorage.setItem("data", JSON.stringify(obj));
-//         history.innerHTML += `<div>${input.value} * ${numSelect.value} = ${r} <button style="box-shadow: 1px 1px 2px black;" onclick="deleteLine('${input.value} * ${numSelect.value}')">Delete</button></div>`;
+//         history.innerHTML += `<div>${input.value} * ${numSelect.value} = ${r} <button style="box-shadow: 1px 1px 0px black;border-radius:7px;border:1px solid black;margin-left:20px;" onclick="deleteLine('${input.value} * ${numSelect.value}')">Delete</button></div>`;
 //     } else {
 //         alert("please enter a number");
 //     }
@@ -123,7 +123,7 @@ function clearData() {
 // function refreshHistory() {
 //     history.innerHTML = "";
 //     for (let n in obj) {
-//         history.innerHTML += `<div>${n} = ${obj[n]} <button style="box-shadow: 1px 1px 2px black;" onclick="deleteLine('${n}')">Delete</button></div>`;
+//         history.innerHTML += `<div>${n} = ${obj[n]} <button style="box-shadow: 1px 1px 0px black;border-radius:7px;border:1px solid black;margin-left:20px;" onclick="deleteLine('${n}')">Delete</button></div>`;
 //     }
 // }
 
